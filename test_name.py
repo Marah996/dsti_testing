@@ -23,7 +23,7 @@ def test_name_with_user_input_empty(monkeypatch):
     assert get_name_from_input() is None
 
 def test_name_with_user_input_with_spaces(monkeypatch):
-    monkeypatch.setattr('sys.stdin', io.8StringIO('Mar ah'))
+    monkeypatch.setattr('sys.stdin', io.StringIO('Mar ah'))
     assert get_name_from_input() is None
 
 def test_name_with_user_input_correct(monkeypatch):
